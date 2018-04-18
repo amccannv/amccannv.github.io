@@ -12,7 +12,6 @@ social-github:       amccannv
 social-email:        andrew@triage.com
 social-linkedin:     amccannv
 url:                 http://cozyboy.me
-baseurl:             ''
 paginate:            5
 
 # About/contact
