@@ -38,7 +38,7 @@ date: 2018-04-19 20:02 -0400
 
 <br>
 
-![Half-star, full bath.](/img/India/fullBath.jpg "Half-start, full bath, no toilet paper.")
+![Half-star, full bath.](/img/India/fullBath.jpg "Half-star, full bath, no toilet paper.")
 
 <br>
 
