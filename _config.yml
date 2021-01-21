@@ -9,15 +9,15 @@ tagline:             'with cozy thoughts'
 description:         'My name is Andrew McCann, and I write about whatever.'
 social-twitter:      AndrewSimulator
 social-github:       amccannv
-social-email:        andrew@triage.com
+social-email:        andrew@gmail.com
 social-linkedin:     amccannv
-url:                 http://cozyboy.me
+url:                 http://amccannv.github.io
 paginate:            5
 
 # About/contact
 author:
   name:              Andrew McCann
-  email:             andrew@triage.com
+  email:             amccannv@gmail.com
 
 plugins:
     [jekyll-paginate]
