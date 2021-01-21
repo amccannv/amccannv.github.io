@@ -13,61 +13,55 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/custom.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="./atom.xml">
 </head>
-
   <body>
-    big body
+    <header>
+      <img src="/public/apple-touch-icon-precomposed.png" class="logo">
+      <h1>I'm Andrew McCann,
+        <br>
+        <i>
+          <div id="content-1">a software engineer.</div>
+          <div id="content-2">a barista.</div>
+          <div id="content-3">a competitive Splatoon player.</div>
+          <div id="content-4">an aspiring generative artist.</div>
+        </i>
+      </h1>
+    </header>
+    <section class="intro">
+      <p>Anyone wanna help me come up with a mission statement?</p>
+      <ul>
+        <li><a href='m&#97;i&#108;&#116;o&#58;am&#99;cann&#37;76&#64;g%&#54;Dail&#46;c&#111;m'>amc&#99;annv&#64;gm&#97;&#105;l&#46;&#99;om</a></li>
+      </ul>
+    </section>
+
+  <script type="text/javascript">
+    var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+    (function cycle() { 
+
+        divs.eq(i).fadeIn(400)
+                  .delay(1000)
+                  .fadeOut(400, cycle);
+
+        i = ++i % divs.length;
+
+    })();
+  </script>
   </body>
 </html>
 
-<!-- ---
-layout: default
-title: Home
----
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.url }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">a {% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-      <div class="post-content">
-        <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-      </div>
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div> -->
