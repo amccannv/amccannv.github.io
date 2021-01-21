@@ -28,7 +28,6 @@ Come see me here
 
 * [Twitter](https://twitter.com/AndrewSimulator) — my Twitter is actually my computer simulating my thoughts
 * [GitHub](https://github.com/amccannv) — some of my projects are here, including this blog
-* [Instagram](https://www.instagram.com/awildmccann/) — pics of my travels
 
 <br>
 
