@@ -13,35 +13,55 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/custom.css">
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="./atom.xml">
 </head>
   <body>
     <header>
-      <h1>I'm Andrew McCann,<br><i>a friend.</i>.</h1>
+      <img src="/public/apple-touch-icon-precomposed.png" class="logo">
+      <h1>I'm Andrew McCann,
+        <br>
+        <i>
+          <div id="content-1">a software engineer.</div>
+          <div id="content-2">a barista.</div>
+          <div id="content-3">a competitive Splatoon player.</div>
+          <div id="content-4">an aspiring generative artist.</div>
+        </i>
+      </h1>
     </header>
     <section class="intro">
-      <hr>
-      <p>In 1998 I created my first website on Geocities and have been involved in making digital things ever since.</p>
-      <hr>
+      <p>Anyone wanna help me come up with a mission statement?</p>
       <ul>
-        <li><a id="email" href="mailto:hi@oldguard.co.uk">hi@oldguard.co.uk</a></li>
-        <li><a href="http://www.linkedin.com/in/johnsontom" title="LinkedIn profile">LinkedIn</a></li>
-        <li><a href="http://twitter.com/oldguard" title="Old Guard Twitter profile">Twitter</a></li>
-        <li><a href="http://instagram.com/oldguard" title="Old Guard Instagram profile">Instagram</a></li>
-        <li><a href="http://dribbble.com/oldguard" title="Old Guard Dribbble profile">Dribbble</a></li>
+        <li><a href='m&#97;i&#108;&#116;o&#58;am&#99;cann&#37;76&#64;g%&#54;Dail&#46;c&#111;m'>amc&#99;annv&#64;gm&#97;&#105;l&#46;&#99;om</a></li>
       </ul>
     </section>
+
+  <script type="text/javascript">
+    var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+    (function cycle() { 
+
+        divs.eq(i).fadeIn(400)
+                  .delay(1000)
+                  .fadeOut(400, cycle);
+
+        i = ++i % divs.length;
+
+    })();
+  </script>
   </body>
 </html>
+
+
