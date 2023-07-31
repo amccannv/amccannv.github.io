@@ -1,3 +1,3 @@
-# My Blog
+# Home page
 
-Based of the Jekyll theme, Lanyon.
+:)
